@@ -21,7 +21,9 @@ function App() {
   ) : (
     <>
       <div>
-        <h1>Reward points calculator per customer</h1>
+        <h1 data-testid='first-header'>
+          Reward points calculator per customer
+        </h1>
         <table>
           <thead>
             <tr>
@@ -40,7 +42,7 @@ function App() {
         </table>
       </div>
       <div>
-        <h1>Reward points calculator per month</h1>
+        <h1 data-testid='second-header'>Reward points calculator per month</h1>
         <table>
           <thead>
             <tr>
