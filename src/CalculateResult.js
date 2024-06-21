@@ -1,18 +1,18 @@
-export const calculateResult = (sampleData) => {
+export const CalculateResult = (sampleData) => {
   //calculate points per transaction
   const months = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
+    'January',
+    'February',
+    'March',
+    'April',
     'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ]
   const pointsperTransaction = sampleData?.map((transaction) => {
     let points = 0

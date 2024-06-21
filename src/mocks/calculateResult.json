@@ -1,0 +1,65 @@
+{
+  "totalByCustomer": [
+    { "name": "hari", "points": 838 },
+    { "name": "satya", "points": 748 },
+    { "name": "krishna", "points": 90 }
+  ],
+  "totalByMonth": [
+    {
+      "custid": 1,
+      "name": "hari",
+      "monthNumber": 4,
+      "month": "May",
+      "numTransactions": 3,
+      "points": 190
+    },
+    {
+      "custid": 1,
+      "name": "hari",
+      "monthNumber": 5,
+      "month": "June",
+      "numTransactions": 2,
+      "points": 50
+    },
+    {
+      "custid": 1,
+      "name": "hari",
+      "monthNumber": 6,
+      "month": "July",
+      "numTransactions": 4,
+      "points": 598
+    },
+    {
+      "custid": 2,
+      "name": "satya",
+      "monthNumber": 4,
+      "month": "May",
+      "numTransactions": 2,
+      "points": 150
+    },
+    {
+      "custid": 2,
+      "name": "satya",
+      "monthNumber": 5,
+      "month": "June",
+      "numTransactions": 2,
+      "points": 50
+    },
+    {
+      "custid": 2,
+      "name": "satya",
+      "monthNumber": 6,
+      "month": "July",
+      "numTransactions": 2,
+      "points": 548
+    },
+    {
+      "custid": 3,
+      "name": "krishna",
+      "monthNumber": 5,
+      "month": "June",
+      "numTransactions": 1,
+      "points": 90
+    }
+  ]
+}

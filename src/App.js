@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import api from './api/dataService'
-import { calculateResult } from './calculate'
+import { CalculateResult } from './CalculateResult'
 
 function App() {
   const [transactions, setTransactions] = useState(null)
@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     try {
       api().then((data) => {
-        const results = calculateResult(data)
+        const results = CalculateResult(data)
         setTransactions(results)
       })
     } catch (error) {
@@ -21,9 +21,7 @@ function App() {
   ) : (
     <>
       <div>
-        <h1 data-testid='first-header'>
-          Reward points calculator per customer
-        </h1>
+        <h1 data-testid='first-header'>Total Reward Points (each customer)</h1>
         <table>
           <thead>
             <tr>
@@ -42,7 +40,7 @@ function App() {
         </table>
       </div>
       <div>
-        <h1 data-testid='second-header'>Reward points calculator per month</h1>
+        <h1 data-testid='second-header'>Customer Reward Points (per month)</h1>
         <table>
           <thead>
             <tr>
@@ -53,7 +51,7 @@ function App() {
           </thead>
           <tbody>
             {transactions?.totalByMonth?.map((transaction, index) => (
-              <tr key={transaction?.month}>
+              <tr key={`${transaction?.month}-${transaction?.name}`}>
                 <td>{transaction?.name}</td>
                 <td>{transaction?.month}</td>
                 <td>{transaction?.points}</td>
